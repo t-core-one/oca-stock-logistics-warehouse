@@ -28,9 +28,9 @@ Stock Inventory Discrepancy
 
 |badge1| |badge2| |badge3| |badge4| |badge5|
 
-Adds the capability to show the discrepancy of every line in an inventory and
-to block the inventory validation (setting it as 'Pending to Approve') when the
-discrepancy is greater than an user defined threshold.
+This module adds the capability to show discrepancies for each line in an inventory and 
+to block inventory validation (setting it as 'Pending to Approve') when the discrepancy
+exceeds a user-defined threshold. This is configurable per company through the settings.
 
 Only new group "Validate All inventory Adjustments" will be able to force the
 validation of those blocked inventories. By default, Stock manager will belong
@@ -45,6 +45,7 @@ threshold now.
 Configuration
 =============
 
+#. Go to "Inventory > Settings" and select the 'Inventory Discrepancy Control' option to block the inventory validation. This should be done for each company.
 #. Go to "Inventory > Warehouse Management" > Warehouses" or to "Inventory >
    Warehouse Management" > Locations".
 #. Modify the "Maximum Discrepancy Rate Threshold" either in a Warehouse or
