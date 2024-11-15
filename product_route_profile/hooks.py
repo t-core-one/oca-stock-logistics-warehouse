@@ -4,8 +4,10 @@
 
 from collections import defaultdict
 
+from odoo import SUPERUSER_ID, api
 
-def post_init_hook(env):
+
+def post_init_hook(cr, registry):
     def get_profile(route_ids):
         route_ids = tuple(set(route_ids))
         profile = route2profile.get(route_ids)
@@ -22,12 +24,13 @@ def post_init_hook(env):
             route2profile[route_ids] = profile
         return profile
 
+    env = api.Environment(cr, SUPERUSER_ID, {})
     query = """
     SELECT product_id, array_agg(route_id)
     FROM stock_route_product group by product_id;
     """
-    env.cr.execute(query)
-    results = env.cr.fetchall()
+    cr.execute(query)
+    results = cr.fetchall()
     route2profile = {}
     profile2product = defaultdict(lambda: env["product.template"])
     for row in results:
