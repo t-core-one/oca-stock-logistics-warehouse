@@ -20,7 +20,7 @@
             <xpath expr="//group[@name='operations']" position="inside">
                 <field
                     name="route_profile_id"
-                    attrs="{'invisible': [('type', 'not in', ['product', 'consu'])], 'required': [('type', 'in', ['product', 'consu'])]}"
+                    attrs="{'invisible': [('type', 'not in', ['product', 'consu'])]}"
                 />
                 <field
                     name="force_route_profile_id"
