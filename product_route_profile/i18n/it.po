@@ -63,6 +63,11 @@ msgstr ""
 "sostituirà il profilo del percorso, solo per questa azienda."
 
 #. module: product_route_profile
+#: model:ir.model.fields,field_description:product_route_profile.field_route_profile____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: product_route_profile
 #: model:ir.model.fields,field_description:product_route_profile.field_route_profile__write_uid
 msgid "Last Updated by"
 msgstr "Ultimo aggiornamento di"
@@ -114,7 +119,8 @@ msgstr "Profili percorsi"
 msgid ""
 "You can define here the routes profiles that run through\n"
 "                your warehouses and that define the flows of your products.\n"
-"                A route profile can be set on each product as \"Route Profile\" or \"Priority Route Profile\" (company dependent)."
+"                A route profile can be set on each product as \"Route "
+"Profile\" or \"Priority Route Profile\" (company dependent)."
 msgstr ""
 "Qui si possono definire i profili dei percorsi che attraversano \n"
 "i magazzini e che definiscono i flussi dei prodotti.\n"

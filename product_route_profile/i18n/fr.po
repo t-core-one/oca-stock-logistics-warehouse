@@ -62,6 +62,11 @@ msgid ""
 msgstr ""
 
 #. module: product_route_profile
+#: model:ir.model.fields,field_description:product_route_profile.field_route_profile____last_update
+msgid "Last Modified on"
+msgstr "Dernière modification le"
+
+#. module: product_route_profile
 #: model:ir.model.fields,field_description:product_route_profile.field_route_profile__write_uid
 msgid "Last Updated by"
 msgstr ""
@@ -120,9 +125,6 @@ msgstr ""
 "produits dans vos entrepôts. \n"
 "Un profil de route peut être défini pour chaque produit en tant que \"Profil "
 "de Routes\" ou \"Profil de Routes Prioritaires\" (société dépendant)."
-
-#~ msgid "Last Modified on"
-#~ msgstr "Dernière modification le"
 
 #~ msgid "Product Template"
 #~ msgstr "Modèle de produit"
